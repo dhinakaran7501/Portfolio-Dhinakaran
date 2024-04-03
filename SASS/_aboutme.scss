@@ -1,0 +1,107 @@
+#Aboutme{
+  padding: 20px 0;
+  border-bottom: 1px solid $white-color;
+
+  h2{
+    padding-bottom: 20px;
+    color: $warning-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .aboutme-section{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-sec{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      position: relative;
+
+      img:nth-child(1){
+        position: absolute;
+        width: 241px;
+        // right: 87px;
+        animation: rotate 9s linear infinite;
+        // bottom: 12px;    
+      }
+
+
+      img:nth-child(2){
+        border: 3px solid $white-color;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 245px;
+        height: 245px;
+      }
+    }
+    .content-sec{
+      width: 68%;
+
+      p{
+        font-size: 24px;
+        text-align: justify;  
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #Aboutme{
+
+    .aboutme-section{
+      flex-direction: column;
+      width: 95%;
+
+      .img-sec{
+        width: 100%;
+
+        img:nth-child(1){
+          width: 204px;
+        }
+
+        img:nth-child(2){
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .content-sec{
+        width: 100%;
+        margin-top: 1%;
+
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width:1200px) {
+  #Aboutme{
+
+    .aboutme-section{
+      flex-direction: column;
+
+      .img-sec{
+        width: 47%;
+      }
+      .content-sec{
+        width: 100%;
+        margin-top: 1%;
+
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+#Education{
+  border-bottom: 1px solid $white-color;
+  padding: 20px;
+
+  h2{
+    padding-bottom: 20px;
+    color: $warning-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .education-section{
+    width: 78%;
+    margin: 0 auto;
+
+    .college-details,
+    ._12th-details,
+    ._10th-details{
+      width: 100%;
+      height: 60px;
+      background-color: $white-color;
+      border: 3px solid;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+
+      .year-sec{
+        display: flex;
+        align-items: center;
+        width: 70%;
+
+        li:nth-child(1){
+          width: 5%;
+          border-right: 1px solid #d4d0d0;
+          height: 55px;
+          color: #000;
+          font-size: 18px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i{
+            font-size: 20px;
+          }
+        }
+        
+        li:nth-child(2){
+          color: $black-color;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          font-size: 18px;
+          gap: 5px;
+          text-transform: uppercase;
+          white-space: nowrap;
+
+          span{
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-left: 14px;
+          }
+        }
+
+      }
+      
+
+      .percentage{
+        width: 15%;
+        color: $black-color;
+        display: flex;
+        align-items: center;
+        gap: 18%;
+        font-weight: 500;
+        font-size: 18px;
+
+        i{
+          border-right: 1px solid #d4d0d0;
+          border-left: 1px solid #d4d0d0;
+          padding: 0 15px;
+          font-size: 20px;
+          height: 55px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    ._12th-details{
+      margin: 1% 0;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  #Education{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  #Education{
+
+
+    .education-section{
+      width: 90%;
+
+      .college-details,
+    ._12th-details,
+    ._10th-details{
+        
+      .year-sec{
+        li:nth-child(1){
+          padding: 20px;
+        }
+
+        li:nth-child(2){
+          flex-wrap: wrap;
+          font-size: 15px;
+          padding-left: 5px;
+          span{
+            margin: 0;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .percentage{
+        width: 18%;
+      }
+    }
+    }
+  }
+}
